@@ -17,13 +17,13 @@ const countdown = () =>{
     const textSecond = Math.floor((gap % minute) / second);
 
     // console.log(textDay);
-    console.log(gap);
+    // console.log(gap);
     document.querySelector(".day").innerText = textDay;
     document.querySelector(".hour").innerText = textHour;
     document.querySelector(".minute").innerText = textMinute;
     document.querySelector(".second").innerText = textSecond;
 
-
+    // Do something when the countdown is 0
     if(gap < 1000){
         document.querySelector(".countdown").style.display = 'none';
         document.querySelector(".countdownText").innerText = "Voila! We are open!"
